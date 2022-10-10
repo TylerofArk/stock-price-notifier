@@ -12,19 +12,19 @@ A stock subscription service that allows for members to join connections for upd
 
 <!-- - [CI/CD GitHub Actions](https://github.com/) -->
 
-
 #### Running the app
 
 npm i chance, socket.io, socket.io-client
 
-- `node ` will start the server to listen
-- `node ` will start the driver module to listen
-- `node ` will start the orders for them.
-- `node ` will start the orders for them.
+`node src/hub/index.js` will start the server to listen
+`node src/stocks/aapl` will start the apple module to simulate price
+`node src/stocks/gme` will start the apple module to simulate price
+`node src/stocks/tsla` will start the apple module to simulate price
+`node src/user/sub-one.js` will start the subscribe user to server for them. On page is able to alter set point to receive updates.
 
 #### UML Diagram
 
-- [](/)
+- [UML basic](./14UML.png)
 
 <!-- Diagram created with [MIRO](https://www.miro.com/) -->
 

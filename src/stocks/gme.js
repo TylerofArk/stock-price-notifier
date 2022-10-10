@@ -18,4 +18,4 @@ setInterval( () => {
   console.log('GME Interval payloads');
   socket.emit('GME TEST', stockPayload);
 
-}, Math.random()*1000);
+}, 10000);

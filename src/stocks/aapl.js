@@ -19,3 +19,4 @@ setInterval( () => {
   socket.emit('AAPL TEST', stockPayload);
 
 }, Math.random()*10000);
+
