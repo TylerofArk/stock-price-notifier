@@ -3,8 +3,8 @@
 const client = require('socket.io-client');
 const socket = client.connect('http://localhost:3002/connections');
 
-// const Chance = require('chance');
-// const chance = new Chance();
+const Chance = require('chance');
+const chance = new Chance();
 
 socket.on('getData', (payload) => {
   console.log('Here is TSLA Info:');
@@ -13,9 +13,10 @@ socket.on('getData', (payload) => {
 setInterval( () => {
   let stockPayload = {
     company: 'Tesla Inc',
-    price: 223.09 + (Math.random()*15),
+    price: chance.dollar({ min: 215.00, max: 235.00 }),
   };
   console.log('TSLA Interval payloads');
   socket.emit('TSLA TEST', stockPayload);
 
-}, 10000);
+}, Math.random()*10000);
+
