@@ -18,4 +18,4 @@ setInterval( () => {
   console.log('TSLA Interval payloads');
   socket.emit('TSLA TEST', stockPayload);
 
-}, Math.random()*1000);
+}, 10000);

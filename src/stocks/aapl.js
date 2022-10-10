@@ -18,4 +18,4 @@ setInterval( () => {
   console.log('AAPL Interval payloads');
   socket.emit('AAPL TEST', stockPayload);
 
-}, Math.random()*1000);
+}, 10000);
